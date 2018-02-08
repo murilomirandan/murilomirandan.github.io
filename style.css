@@ -1,0 +1,138 @@
+/*    ID's    */
+#btn-submit{
+  color: #2B8DAD;
+  background-color: #FFFFFF;
+  border: 2px solid #2B8DAD;
+  font-weight: 700;
+}
+
+#port-h2{
+  text-align: center;
+  color: #2B8DAD;
+  font-size:300%;
+}
+
+#about{
+  background: url(https://user-images.githubusercontent.com/2809318/33624210-e14d1604-d9f3-11e7-93d6-8425ad93aa94.jpg);
+  margin-top: 0px;
+}
+
+#my-name{
+  font-size: 120%;
+  font-weight:700;
+}
+
+#contact{
+  margin-top: 30px;
+}
+
+#nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFF;
+  height:84px;
+}
+
+#social-media{
+  text-align: center;
+}
+
+/*     CLASSES    */
+.port-proj .name-proj{
+  font-size: 110%;
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #000;
+  color: white;
+}
+
+.fa-free-code-camp {
+  background: darkgreen;
+  color: #FFF;
+}
+
+.li-bar {
+  float: right;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.prof-pic {
+  border-color: #2B8DAD;
+  border-width: 8px;
+  border-style: solid;  
+  border-radius: 40%;
+  margin-top: 50px;
+}
+
+.footer {
+  background-color: #FAAA57;
+  color: white;
+  height: 40px;
+  padding: 10px;
+}
+
+.well{
+  background-color: #2B8DAD !important;
+  color: #FFF;
+}
+/*    SELECTORS    */
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+span{
+  font-weight: bold;
+}
+
+p{
+  font-size: 120%;
+  text-align: justify;
+}
+
+li{
+  text-align: justify;
+}
+
+li a {
+  display: block;
+  color: #57D1FA;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+li a:hover:not(.active) {
+  background-color: #FAAA57;
+}
