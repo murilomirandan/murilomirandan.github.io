@@ -1,0 +1,149 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__menu {
+  display: none;
+}
+
+.hero, .top-news, .scores, .weather, .recent-news {
+  order: 10;
+}
+
+@media screen and (max-width: 549px) {
+  .header__logo {
+    display: none;
+  }
+  .header__title {
+    margin-left: 0.5em;
+    font-size: 2em;
+    vertical-align: bottom;
+  }
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 0.75em;
+    font-size: 1.5em;
+  }
+  .header__menu svg {
+    width: 32px;
+    fill: #E0E0E0;
+  }
+  .longName{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 435px) and (max-width: 459px){
+  .hero{
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 549px){
+  .hero{
+    height: 250px;
+  }
+  .top-news {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .header__title {
+    margin-left: 0.5em;
+    font-size: 3em;
+    vertical-align: bottom;
+  }
+  .weather__today__image {
+    width: 80%;
+    vertical-align: middle;
+  }
+  .weather__today__temp {
+    font-size: 1.5em;
+  }
+  .weather__today__deg {
+    font-size: 1em;
+  }
+  .hero {
+    order: 0;
+    width: 60%;
+  }
+  .weather {
+    order: 1;
+    width: 40%;
+  }
+  .inning{
+    display: none;
+  }
+  .top-news {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    width: 50%;
+  }
+  .top-news {
+    order: 1;
+    width: 50%;
+  }
+  .scores {
+    order: 2;
+    width: 60%;
+  }
+  .weather {
+    order: 3;
+    width: 40%;
+  }
+  .weather__today__image {
+    width: 70%;
+    vertical-align: middle;
+  }
+  .weather__today__temp {
+    font-size: 2.5em;
+  }
+  .weather__today__deg {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 850px){
+  .hero{
+    height: 340px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main, .header__inner, .nav, .content {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero article{
+    height: 35%;
+  }
+}
