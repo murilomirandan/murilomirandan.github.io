@@ -22,48 +22,26 @@
           <img class="header_logo" src="img/logo-800_large_1x.png" srcset="img/logo-1600_large_2x.png 2x" alt="white and blue 3D-MM logo">
           <div class="header_title">
             <h1 class="header_name">Murilo Miranda</h1>
-            <h4 class="header_job">front-end development</h4>
-            <div class="header_nav">
-              <ul id="nav-bar">
-                <li class="li-bar"><a href="#about">About</a></li>
-                <li class="li-bar"><a href="#featured_work">Portfolio</a></li>
-                <li class="li-bar"><a href="#contact">Contact</a></li>
-              </ul>
+            <h2 class="header_job">Front-end Ninja</h2>
           </div>
+        </div>
       </header>
 
       <!-- CONTENT -->
       <!-- Big image -->
-      <section id="about">
-        <div class="about-image">
-          <div class="about-me">
-            <div class="about-block">
-              <p>Currently I am changing my career from theoretical ecologist to web designer. I have won two scholarships in Web Front-end development in Udacity.
-                My course is still in progress. However, during my academic training, I worked with different biological databases used statistical techniques.
-                I also managed my own research and participated in-group project meetings. As a result, I developed and maintained successful working relationships.</p>
-            </div>
-            <div class="about-block">
-              <p class="p-bigger">Skills:</p>
-              <ul>
-                <li><span>Software:</span> Windows, R, C, Linux, ESRI ArcGIS, MS Office, LATEX, Markdown, Python.</li>
-                <li><span>Statistics:</span> Generalized linear models, mixed effects models, multivariate statistics, data visualization, model selection, likelihood optimization, bootstrap.</li>
-                <li><span>Web pages:</span> HTML5, CSS, JavaScript, Bootstrap, jQuery.</li>
-                <li><span>Languages:</span> Portuguese (native), English (C1), Spanish (A2), German (A2).</li>
-              </ul>
-            </div>
-          </div>
-          <div id="my_picture">
-            <img src="img/my_picture.jpg" class="prof-pic">
-          </div>
-        </div>
-      </section>
+      <div id="main_image">
+        <picture>
+          <source media="(min-width: 600px)" srcset="img/main_image-large.jpeg">
+          <img src="img/main_image-small.jpeg" alt="Notebook, iPad and phones on the office desk">
+        </picture>
+      </div>
 
       <!-- Featured Work -->
       <main id="featured_work">
         <h2>Featured work</h2>
         <div class="works">
           <div class="img_work">
-            <a href="https://murilomiranda.github.io/animal_trading_cards/index.html">
+            <a href="#">
               <picture>
                 <source media="(min-width: 900px)" srcset="img/animal_cards-1600_large_2x.jpg 2x, img/animal_cards-800_large_1x.jpg">
                 <source media="(min-width: 420px)" srcset="img/animal_cards-large.jpg">
@@ -73,7 +51,7 @@
             <h3>Animal Trading Cards</h3>
           </div>
           <div class="img_work">
-            <a href="https://murilomiranda.github.io/portfolio/index.html">
+            <a href="#">
               <picture>
                 <source media="(min-width: 900px)" srcset="img/portfolio-1600_large_2x.jpg 2x, img/portfolio-800_large_1x.jpg">
                 <source media="(min-width: 600px)" srcset="img/portfolio-large.jpg">
@@ -81,16 +59,6 @@
               </picture>
             </a>
             <h3>Build a Portfolio</h3>
-          </div>
-          <div class="img_work">
-            <a href="#">
-              <picture>
-                <!-- <source media="(min-width: 900px)" srcset="img/portfolio-1600_large_2x.jpg 2x, img/portfolio-800_large_1x.jpg"> -->
-                <!-- <source media="(min-width: 600px)" srcset="img/portfolio-large.jpg"> -->
-                <img src="img/pixel_art_maker.jpg" alt="Grid with cells in different colors">
-              </picture>
-            </a>
-            <h3>Pixel Art Maker</h3>
           </div>
         </div>
 
@@ -161,7 +129,7 @@
       </main>
 
       <!-- FOOTER -->
-      <footer id="contact">
+      <footer>
         <!--  -->
         <div id="social">
           <a href="https://www.facebook.com/murilomirandan" target="_blank" class="fontawesome-facebook-sign">Facebook</a>
