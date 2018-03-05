@@ -90,6 +90,7 @@ h3 {
   padding: 0 0.5em;
   margin: 0 0.5em;
   text-align: justify;
+  font-family: 'Mukta Mahee', sans-serif;
   font-size: 1em;
 }
 
@@ -138,8 +139,8 @@ ul span {
   margin-top: 5px;
 }
 
-/**** FOOTER ****/
-footer {
+/**** CONTACT ****/
+#contact {
   font-family: 'Mukta Mahee', sans-serif;
   text-align: center;
   border-top: 2px solid #ddd;
