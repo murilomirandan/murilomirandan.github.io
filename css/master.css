@@ -26,7 +26,6 @@ header {
 }
 
 h1,
-.header_title h2,
 h3 {
   text-transform: uppercase;
 }
@@ -39,7 +38,7 @@ h3 {
 .header_logo {
   height: 20vmin;
   width: 20vmin;
-  margin: 0.75em 1em 0 1em;
+  margin: 0.75em 0.5em 0 0.5em;
   vertical-align: top;
 }
 
@@ -55,11 +54,23 @@ h3 {
 }
 
 .header_job {
-  margin: 0 0 10px;
+  margin: -10px 0 10px;
 }
 
-/**** Main Image ****/
-#main_image {
+#nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 0 0 50px;
+  padding: 0;
+  /* overflow: hidden; */
+  background-color: #fff;
+  /* height:84px; */
+}
+
+/**** About ****/
+#about {
   margin-top: 1em;
 }
 
