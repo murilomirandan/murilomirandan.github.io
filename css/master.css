@@ -72,6 +72,49 @@ h3 {
 /**** About ****/
 #about {
   margin-top: 1em;
+  background-image: url("../img/portfolio.jpg");
+	/* background-image: -webkit-image-set(
+  	url("../imgs/background-1x.jpg") 1x,
+  	url("../imgs/background-2x.jpg") 2x
+	);
+	background-image: image-set(
+  	url("../imgs/background-1x.jpg") 1x,
+  	url("../imgs/background-2x.jpg") 2x
+	); */
+}
+
+.about-block{
+  background-color: #2b8dad;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 0.5em;
+  margin: 0 0.5em;
+  text-align: justify;
+  font-size: 1em;
+}
+
+.p-bigger{
+  font-size: 1.2em;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#my_picture img {
+  max-width: 90%;
+}
+
+.prof-pic {
+  margin: 1em;
+  border-radius: 100%;
 }
 
 /**** Featured Work ****/
@@ -160,6 +203,10 @@ a:hover {
     font-size: 1.5em;
   }
 
+  #nav-bar {
+    margin: 0 0 0 100px;
+  }
+
   #featured_work h2 {
     font-size: 2.3em;
   }
@@ -189,6 +236,29 @@ a:hover {
     font-size: 1.75em;
   }
 
+  #nav-bar {
+    margin: 0 0 0 200px;
+  }
+
+  .about-image{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .prof-pic {
+    margin: 5em 1em 1em 1em;
+    border-radius: 100%;
+  }
+
+  .about-me {
+    max-width: 50%;
+    margin-bottom: 1em;
+  }
+
+  #my_picture {
+    max-width: 50%;
+  }
+
   #featured_work h2 {
     font-size: 2.3em;
   }
@@ -203,6 +273,13 @@ a:hover {
 }
 
 /** Desktop **/
+@media screen and (min-width: 873px){
+  .prof-pic {
+    margin: 2em 1em 1em 1em;
+    border-radius: 100%;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .container {
     width: 900px;
