@@ -1,283 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Front-end, Web development">
+    <meta name="author" content="Murilo Miranda Nüßlein">
+    <title>Murilo's Portfolio</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PortfolioMMN</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
+  </head>
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body class="container-fluid">
-  <!-- Header -->
-  <div id="top-port">
-    <div id="header">
-      <ul id="nav-bar">
-        <li style="float:left" id="my-name"><a href="#home">Murilo Miranda Nüßlein</a></li>
-        <li class="li-bar"><a href="#contact">Contact</a></li>
-        <li class="li-bar"><a href="#portfolio">Portfolio</a></li>
-        <li class="li-bar"><a href="#about">About</a></li>
-      </ul>
-    </div>
-    <!-- About -->
-    <div id="about">
-      <br>
-      <a name="about"></a>
-      <div class="row">
-        <div class="col-md-7">
-          <div class="well">
-            <p>During my academic training, I worked with different biological databases used statistical techniques to verify how environmental variations influenced species diversity and abundance. I also managed my own research and participated in-group
-              project meetings. As a result, I developed and maintained successful working relationships. </p>
-          </div>
-          <div class="well">
-            <p>Skills:
-              <p>
-                <ul>
-                  <li><span>Software:</span> Windows, R, C, Linux, ESRI ArcGIS, MS Office, LATEX, Markdown, Python.</li>
-                  <li><span>Statistics:</span> Generalized linear models, mixed effects models, multivariate statistics, data visualization, model selection, likelihood optimization, bootstrap.</li>
-                  <li><span>Web pages:</span> HTML5, CSS, JavaScript, Bootstrap, jQuery.</li>
-                  <li><span>Languages:</span> Portuguese (native), English (C1), Spanish (A2), German (A2).</li>
-                  </dl>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <div class="header_inner">
+          <img class="header_logo" src="img/logo-800_large_1x.png" srcset="img/logo-1600_large_2x.png 2x" alt="white and blue 3D-MM logo">
+          <div class="header_title">
+            <h1 class="header_name">Murilo Miranda</h1>
+            <h2 class="header_job">Front-end Ninja</h2>
           </div>
         </div>
-        <div class="col-md-5">
-          <div id="my_picture">
-            <img src="https://user-images.githubusercontent.com/2809318/33570773-2ce8d812-d92e-11e7-9b9e-480cbecb45bd.JPG" class="prof-pic img-responsive">
+      </header>
+
+      <!-- CONTENT -->
+      <!-- Big image -->
+      <div id="main_image">
+        <picture>
+          <source media="(min-width: 600px)" srcset="img/main_image-large.jpeg">
+          <img src="img/main_image-small.jpeg" alt="Notebook, iPad and phones on the office desk">
+        </picture>
+      </div>
+
+      <!-- Featured Work -->
+      <main id="featured_work">
+        <h2>Featured work</h2>
+        <div class="works">
+          <div class="img_work">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 900px)" srcset="img/animal_cards-1600_large_2x.jpg 2x, img/animal_cards-800_large_1x.jpg">
+                <source media="(min-width: 420px)" srcset="img/animal_cards-large.jpg">
+                <img src="img/animal_cards-small.jpg" alt="Card with two red-footed tortoises">
+              </picture>
+            </a>
+            <h3>Animal Trading Cards</h3>
+          </div>
+          <div class="img_work">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 900px)" srcset="img/portfolio-1600_large_2x.jpg 2x, img/portfolio-800_large_1x.jpg">
+                <source media="(min-width: 600px)" srcset="img/portfolio-large.jpg">
+                <img src="img/portfolio-small.jpg" alt="Notebook, Tablet and phones on the office desk">
+              </picture>
+            </a>
+            <h3>Build a Portfolio</h3>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Portfolio -->
-  <div id="portfolio">
-    <a name="potfolio"></a>
-    <br>
-    <h2 id="port-h2">Portfolio</h2>
-    <br>
-    <div class="row port-proj">
-      <div class="col-md-4 col-xs-12">
-        <a href="https://codepen.io/murilomiranda/full/zPBZLr" target="_blank">
-          <div class="row">
-            <div class="col-md-12 fa">
-              <img class="img-responsive" src="https://user-images.githubusercontent.com/2809318/33579052-bcdec412-d948-11e7-8359-b850b6532c2e.png" alt="Project: animal card">
-            </div>
-            <div class="col-md-12 name-proj">
-              Animal card
-            </div>
+        <!-- Future Projects -->
+        <h2>Future projects</h2>
+        <div class="works">
+          <div class="img_work">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 900px)" srcset="img/under_construction-1600_large_2x.jpeg 2x, img/under_construction-800_large_1x.jpeg">
+                <source media="(min-width: 600px)" srcset="img/under_construction-large.jpeg">
+                <img src="img/under_construction-small.jpeg" alt="warning: under construction projec">
+              </picture>
+            </a>
+            <h3>Memory Game</h3>
           </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="https://codepen.io/murilomiranda/pen/rYaBmg" target="_blank">
-          <div class="row">
-            <div class="col-md-12 fa">
-              <img class="img-responsive" src="https://user-images.githubusercontent.com/2809318/33579093-e16cdbac-d948-11e7-968d-42a85f6a529e.png" alt="Project: Build a Tribute Page">
-            </div>
-            <div class="col-md-12 name-proj">
-              Tribute Page
-            </div>
+          <div class="img_work">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 900px)" srcset="img/under_construction-1600_large_2x.jpeg 2x, img/under_construction-800_large_1x.jpeg">
+                <source media="(min-width: 600px)" srcset="img/under_construction-large.jpeg">
+                <img src="img/under_construction-small.jpeg" alt="warning: under construction projec">
+              </picture>
+            </a>
+            <h3>Classic Arcade Game Clone</h3>
           </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-
-      </div>
-    </div>
-    <br>
-    <h2 style="color:#2B8DAD">Future Projects</h2>
-    <br>
-    <div class="row port-proj">
-      <div class="col-md-4">
-        <a href="#" target="_blank">
-          <div class="row">
-            <div class="col-md-12 fa">
-              <img class="img-responsive" src="https://user-images.githubusercontent.com/2809318/33622770-08f019e0-d9ef-11e7-9ece-3ae632eb14b9.png" alt="Project: Random Quote Machine">
-            </div>
-            <div class="col-md-12 name-proj">
-              Random Quote Machine
-            </div>
+          <div class="img_work">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 900px)" srcset="img/under_construction-1600_large_2x.jpeg 2x, img/under_construction-800_large_1x.jpeg">
+                <source media="(min-width: 600px)" srcset="img/under_construction-large.jpeg">
+                <img src="img/under_construction-small.jpeg" alt="warning: under construction projec">
+              </picture>
+            </a>
+            <h3>Feed Reader Testing</h3>
           </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#" target="_blank">
-          <div class="row">
-            <div class="col-md-12 fa">
-              <img class="img-responsive" src="https://user-images.githubusercontent.com/2809318/33622770-08f019e0-d9ef-11e7-9ece-3ae632eb14b9.png" alt="Project: Local Weather">
-            </div>
-            <div class="col-md-12 name-proj">
-              Local Weather
-            </div>
+          <div class="img_work">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 900px)" srcset="img/under_construction-1600_large_2x.jpeg 2x, img/under_construction-800_large_1x.jpeg">
+                <source media="(min-width: 600px)" srcset="img/under_construction-large.jpeg">
+                <img src="img/under_construction-small.jpeg" alt="warning: under construction projec">
+              </picture>
+            </a>
+            <h3>Restaurant Reviews App</h3>
           </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#" target="_blank">
-          <div class="row">
-            <div class="col-md-12 fa">
-              <img class="img-responsive" src="https://user-images.githubusercontent.com/2809318/33622770-08f019e0-d9ef-11e7-9ece-3ae632eb14b9.png" alt="Project: Wikipedia Viewer">
-            </div>
-            <div class="col-md-12 name-proj">
-              Wikipedia Viewer
-            </div>
+          <div class="img_work">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 900px)" srcset="img/under_construction-1600_large_2x.jpeg 2x, img/under_construction-800_large_1x.jpeg">
+                <source media="(min-width: 600px)" srcset="img/under_construction-large.jpeg">
+                <img src="img/under_construction-small.jpeg" alt="warning: under construction projec">
+              </picture>
+            </a>
+            <h3>MyReads: A Book Tracking App</h3>
           </div>
-        </a>
-      </div>
-    </div>
-    <br>
-    <div class="row port-proj">
-      <div class="col-md-4">
-        <a href="#" target="_blank">
-          <div class="row">
-            <div class="col-md-12 fa">
-              <img class="img-responsive" src="https://user-images.githubusercontent.com/2809318/33622770-08f019e0-d9ef-11e7-9ece-3ae632eb14b9.png" alt="Project: Twitch.tv JSON API">
-            </div>
-            <div class="col-md-12 name-proj">
-              Twitch.tv JSON API
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#" target="_blank">
-          <div class="row">
-            <div class="col-md-12 fa">
-              <img class="img-responsive" src="https://user-images.githubusercontent.com/2809318/33622770-08f019e0-d9ef-11e7-9ece-3ae632eb14b9.png" alt="Project: Calculator">
-            </div>
-            <div class="col-md-12 name-proj">
-              Calculator
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#" target="_blank">
-          <div class="row">
-            <div class="col-md-12 fa">
-              <img class="img-responsive" src="https://user-images.githubusercontent.com/2809318/33622770-08f019e0-d9ef-11e7-9ece-3ae632eb14b9.png" alt="Project: Pomodoro Clock">
-            </div>
-            <div class="col-md-12 name-proj">
-              Pomodoro Clock
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <br>
-    <div class="row port-proj">
-      <div class="col-md-4">
-        <a href="#" target="_blank">
-          <div class="row">
-            <div class="col-md-12 fa">
-              <img class="img-responsive" src="https://user-images.githubusercontent.com/2809318/33622770-08f019e0-d9ef-11e7-9ece-3ae632eb14b9.png" alt="Project: Tic Tac Toe Game">
-            </div>
-            <div class="col-md-12 name-proj">
-              Tic Tac Toe Game
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#" target="_blank">
-          <div class="row">
-            <div class="col-md-12 fa">
-              <img class="img-responsive" src="https://user-images.githubusercontent.com/2809318/33622770-08f019e0-d9ef-11e7-9ece-3ae632eb14b9.png" alt="Project: Simon Game">
-            </div>
-            <div class="col-md-12 name-proj">
-              Simon Game
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-      </div>
-    </div>
-  </div>
-
-  <!-- Contact me -->
-  <div id="contact" class="controls">
-    <a name="contact"></a>
-    <div class="row">
-      <div class="col-md-4">
-        <p>Contact me</p>
-        <form action="/send-a-message">
-          <div class="form-group">
-            <label for="input-name">Name *</label>
-            <input id="input-name" type="text" class="form-control" name="name" placeholder="Please enter your Name" data-error="Name is required." required>
-          </div>
-          <div class="form-group">
-            <label for="input-email">Email *</label>
-            <input id="input-email" type="email" class="form-control" name="e-mail" placeholder="Please enter your Email" data-error="Valid email is required." required>
-          </div>
-        </form>
-      </div>
-      <div class="col-md-4">
-        <form>
-          <div class="form-group">
-            <label for="input-msg">Message *</label>
-            <textarea id="input-msg" type="text" class="form-control" name="msg" placeholder="Message for me" rows="3" data-error="Please, leave me a message." required></textarea>
-          </div>
-          <div class="form-group">
-            <input type="submit" class="btn" id="btn-submit" value="Submit">
-          </div>
-          <p style="font-size:100%"><strong>*</strong> These fields are required.</p>
-        </form>
-      </div>
-      <div class="col-md-4">
-        <p>Also you can find me:</p>
-        <div id="social-media">
-          <div class="row">
-            <div class="col-md-6">
-              <a href="https://www.facebook.com/murilodantas48" target="_blank"><i class="fa fa-facebook fa-2x pull-right"></i>
-                  </a>
-            </div>
-            <div class="col-md-6">
-              <a href="https://github.com/murilomiranda" target="_blank"><i class="fa fa-github fa-2x pull-left"></i>
-                  </a>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-6">
-              <a href="https://www.linkedin.com/in/murilo-miranda-027b8334/" target="_blank"><i class="fa fa-linkedin fa-2x pull-right"></i>
-                  </a>
-            </div>
-            <div class="col-md-6">
-              <a href="https://www.freecodecamp.org/murilomiranda" target="_blank"><i class="fa fa-free-code-camp fa-2x pull-left"></i>
-                  </a>
-            </div>
+          <div class="img_work">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 900px)" srcset="img/under_construction-1600_large_2x.jpeg 2x, img/under_construction-800_large_1x.jpeg">
+                <source media="(min-width: 600px)" srcset="img/under_construction-large.jpeg">
+                <img src="img/under_construction-small.jpeg" alt="warning: under construction projec">
+              </picture>
+            </a>
+            <h3>Neighborhood Map</h3>
           </div>
         </div>
-      </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <!--  -->
+        <div id="social">
+          <a href="https://www.facebook.com/murilomirandan" target="_blank" class="fontawesome-facebook-sign">Facebook</a>
+          <a href="https://github.com/murilomiranda" target="_blank" class="fontawesome-github">GitHub</a>
+          <a href="https://www.linkedin.com/in/murilo-miranda-nuesslein" target="_blank" class="fontawesome-linkedin">LinkedIn</a>
+        </div>
+
+        <p>
+          <a href="http://jigsaw.w3.org/css-validator" target="_blank">
+            <img class="css-validator" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+          </a>
+        </p>
+      </footer>
     </div>
-  </div>
-  <br>
-
-  <!-- Footer -->
-  <div class="footer">
-    <div class="row">
-      <div class="col-md-10">
-        &copy; Murilo Miranda Nüßlein
-      </div>
-      <div class="col-md-2">
-        <a href="#">Back to Top</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
